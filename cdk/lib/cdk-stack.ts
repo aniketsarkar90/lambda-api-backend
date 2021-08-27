@@ -20,7 +20,7 @@ export class CdkStack extends Stack {
 
         const environment = { SAMPLE_TABLE: table.tableName };
         // The code will be uploaded to this location during the pipeline's build step
-        const artifactBucket = s3.Bucket.fromBucketName(this, 'ArtifactBucket', process.env.S3_BUCKET!);
+        const artifactBucket = s3.Bucket.fromBucketName(this, 'ArtifactBucket', 'LambdaAPIBackend');
         const artifactKey = `${process.env.CODEBUILD_BUILD_ID}/function-code.zip`;
         const code = lambda.Code.fromBucket(artifactBucket, artifactKey);
 
