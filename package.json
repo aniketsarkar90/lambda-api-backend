@@ -4,7 +4,7 @@
     "version": "0.0.1",
     "private": true,
     "dependencies": {
-        "aws-sdk": "^2.1043.0"
+        "aws-sdk": "^2.1044.0"
     },
     "devDependencies": {
         "jest": "^27.4.3"
