@@ -7,7 +7,7 @@
         "aws-sdk": "^2.1048.0"
     },
     "devDependencies": {
-        "jest": "^27.4.5"
+        "jest": "^27.4.6"
     },
     "scripts": {
         "test": "jest"
